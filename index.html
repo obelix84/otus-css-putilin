@@ -1,10 +1,132 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
-  <meta charset="utf-8" />
-  <title>Привет Otus!</title>
+  <meta charset="utf-8">
+  <title>Otus lesson 3</title>
 </head>
+
 <body>
-    <h1>Пустой шаблон HTML5</h1>
+  <header>
+    <nav>
+      <ul>
+        <li>Biography</li>
+        <li>Designers</li>
+        <li>Testimonials</li>
+        <li>Strong points</li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <!-- hero -->
+    <section>
+      <h1>Mod Studio</h1>
+      <p>Modern Web Studio</p>
+    </section>
+    <!-- биография -->
+    <section>
+      <h2>Biography</h2>
+      <img src="img/katya.jpg" alt="Katya Mills Art Director">
+      <p>Katya Mills</p>
+      <p>Art Director</p>
+      <p>Scenography / Styling / Creative Photography / Design</p>
+      <!-- как вариант можно вот так с <br>
+          <p>Art Director<br>
+          Scenography / Styling / Creative Photography / Design</p>
+        -->
+
+      <hr> <!--там на макете черточка коротенькая, ее можно попытаться сдесть потом стилями-->
+
+      <blockquote>“The more I deal with the work as something that is my own, as something that is personal,
+        the more successful it is.”</blockquote>
+    </section>
+    <!-- Дизайнеры -->
+    <section>
+      <h2>Designers</h2>
+      <div>
+        <img src="img/jess-wonder.jpg" alt="Jess Wonder Photo">
+        <!-- вот тут я не уверен, что H3 надо может просто P -->
+        <!--Стиль, т.к. лень перепечатывать большими буквами-->
+        <h3 style="text-transform: uppercase">Jess Wonder</h3>
+        <p><strong>From/</strong> Be more flower</p>
+        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+      </div>
+      <div>
+        <img src="img/kameron-clein.jpg" alt="Kameron Clein Photo">
+        <h3 style="text-transform: uppercase">Kameron Clein</h3>
+        <p><strong>From/</strong> Be more flower
+        </p>
+        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+      </div>
+      <div>
+        <img src="img/louisse-red.jpg" alt="Louisse Red">
+        <h3 style="text-transform: uppercase">Louisse Red</h3>
+        <p><strong>From/</strong> Be more flower
+        </p>
+        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+      </div>
+      <div>
+        <img src="img/kameron-clein.jpg" alt="Kameron Clein Photo">
+        <h3 style="text-transform: uppercase">Kameron Clein</h3>
+        <p><strong>From/</strong> Be more flower
+        </p>
+        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+      </div>
+    </section>
+    <!-- Отзывы -->
+    <section>
+      <h2>Testimonials</h2>
+      <div><!-- левую и правую часть в отедельные div, надо или нет хз, но я бы потом потом стилями "выравнивал" их-->
+        <div>
+          <p>
+            <strong>Website</strong><br>
+            <a href="#">www.whitepapers.com</a>
+          </p>
+        </div>
+        <div>
+          <p>
+            <strong>Creativity</strong><br>
+            <a href="#">www.whitepapers.com</a>
+          </p>
+        </div>
+        <div>
+          <p><strong>Creativity</strong><br>
+            <a href="#">www.whitepapers.com</a>
+          </p>
+        </div>
+        <img src="img/restaurant.jpg" alt="retaurant photo">
+      </div>
+      <div>
+        <p>
+          I just really want to do good work and work with some great people, people who challenge me.
+        </p>
+        <img src="img/string-bag.jpg" alt="Авоська">
+      </div>
+    </section>
+    <!-- Сильные стороны, очень сильные-->
+    <section>
+      <h2>Strong points</h2>
+      <img src="img/room.jpg" alt="Room Design">
+      <img src="img/chair.jpg" alt="Chair and room Design">
+      <div>
+        <h3>Strengths</h3>
+        <ul>
+          <li>Interiors</li>
+          <li>Outdoors</li>
+          <li>Portraits</li>
+          <li>Styling</li>
+          <li>Events</li>
+          <li>Architecture</li>
+          <li>Celebrations</li>
+          <li>Fashion</li>
+          <li>Nature</li>
+        </ul>
+      </div>
+      <img src="img/restaurant.jpg" alt="Restaurant Desing">
+      <!--эта картинка в макете спрятана-->
+      <img src="img/chair.jpg" alt="Chair and room Design">
+    </section>
+  </main>
 </body>
+
 </html>
