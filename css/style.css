@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        local("Playfair Display Medium"),
+        url("../fonts/PlayfairDisplay-Medium.ttf");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        local("Playfair Display Regular"),
+        url("../fonts/PlayfairDisplay-Regular.ttf");
+    font-weight: 400;
+}
+
+html {
+    font-size: 16px;
+    /*должен быть по умолчанию, но пусть будет на всякий*/
+    line-height: normal;
+    /* приблизительно 1.2  */
+    font-family: 'Roboto', sans-serif;
+    /*По умолчанию поставил Roboto по макету не понятно*/
+}
+
+.nav-list {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+.nav-link-marked {
+    text-shadow: 1px 1px 2px #000;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+.hero-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+}
+
+.hero-par {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-title {
+    color: #000;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.biography-name {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-par {
+    color: #0D0D0D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-dash {
+    border: 0;
+    width: 1.25rem;
+    height: 0.375rem;
+    background: #0D0D0D;
+}
+
+.biography-quote {
+    color: #0D0D0D;
+    font-family: 'Bitter', serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* 
+font-family: 'Bitter', serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Playfair Display', serif;
+*/

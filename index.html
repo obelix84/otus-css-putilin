@@ -4,40 +4,46 @@
 <head>
   <meta charset="utf-8">
   <title>Otus lesson 3</title>
+  <link href="./css/style.css" rel="stylesheet" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <header>
     <nav>
-      <ul>
-        <li>Biography</li>
-        <li>Designers</li>
-        <li>Testimonials</li>
-        <li>Strong points</li>
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link nav-link-marked">Biography</a></li>
+        <li><a href="#" class="nav-link">Designers</a></li>
+        <li><a href="#" class="nav-link">Testimonials</a></li>
+        <li><a href="#" class="nav-link">Strong points</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- hero -->
     <section>
-      <h1>Mod Studio</h1>
-      <p>Modern Web Studio</p>
+      <h1 class="hero-title">Mod Studio</h1>
+      <p class="hero-par">Modern Web Studio</p>
     </section>
     <!-- биография -->
     <section>
-      <h2>Biography</h2>
+      <h2 class="biography-title">Biography</h2>
       <img src="img/katya.jpg" alt="Katya Mills Art Director">
-      <p>Katya Mills</p>
-      <p>Art Director</p>
-      <p>Scenography / Styling / Creative Photography / Design</p>
+      <p class="biography-name">Katya Mills</p>
+      <p class="biography-par">Art Director</p>
+      <p class="biography-par">Scenography / Styling / Creative Photography / Design</p>
       <!-- как вариант можно вот так с <br>
           <p>Art Director<br>
           Scenography / Styling / Creative Photography / Design</p>
         -->
 
-      <hr> <!--там на макете черточка коротенькая, ее можно попытаться сдесть потом стилями-->
+      <hr class="biography-dash"> <!--там на макете черточка коротенькая, ее можно попытаться сдесть потом стилями-->
 
-      <blockquote>“The more I deal with the work as something that is my own, as something that is personal,
+      <blockquote class="biography-quote">“The more I deal with the work as something that is my own, as something that is personal,
         the more successful it is.”</blockquote>
     </section>
     <!-- Дизайнеры -->
