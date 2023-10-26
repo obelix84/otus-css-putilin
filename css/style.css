@@ -28,9 +28,27 @@ html {
     /*По умолчанию поставил Roboto по макету не понятно*/
 }
 
+.navigation {
+    height: 135px;
+    position: relative;
+    margin-left: 23px;
+    margin-right: 20px;
+}
+/*ну вот такой вот метод, дучше flex, но мы его не проходили*/
 .nav-list {
     list-style-type: none;
     font-family: 'Roboto', sans-serif;
+    text-align: right;
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+.nav-list li {
+    display: inline-block;
+    padding-left: 55px;
 }
 
 .nav-link {
@@ -45,6 +63,32 @@ html {
     text-decoration: underline;
 }
 
+.hero-section {
+    background: url("/img/hero-bg-layer.jpg");
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 630px;
+    position: relative;
+}
+/*лучше flex, но мы его не проходили*/
+.hero-innerblock {
+    background-color: white;
+    width: 48%; /* всего 1440, ширина блока 690 итого имеем около 48%*/
+    min-width: 690px; /* ограничим снизу, чтоб не было уже*/
+    height: 360px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+/* т.к. высота блока задна, можно padding задать и отцетрировать по высоте*/
+.hero-message {
+    padding-top: 110px;
+}
+
 .hero-title {
     color: #000;
     text-align: center;
@@ -53,6 +97,8 @@ html {
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
+    /*а здесь сделаем так*/
+    margin-bottom: 14px;
 }
 
 .hero-par {
@@ -205,10 +251,3 @@ html {
     line-height: normal;
     list-style-type: none;
 }
-
-
-/* 
-font-family: 'Bitter', serif;
-font-family: 'Roboto', sans-serif;
-font-family: 'Playfair Display', serif;
-*/
