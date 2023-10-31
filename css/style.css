@@ -116,21 +116,21 @@ html {
 .biography-section {
     display: flex;
     justify-content: center;
+    margin-bottom: 150px;
 }
 
 .biography-left {
-    width: 571px;
+    width: 39.7%;
     height: 840px;
 }
 
 .biography-img {
-    width: 571px;
-    height: 840px;
+    max-height: 840px;
 }
 
 .biography-center {
     display: flex;
-    width: 139px;
+    width: 9.7%;
     height: 840px;
     flex-direction: column;
     justify-content: flex-start;
@@ -138,7 +138,7 @@ html {
 }
 
 .biography-right {
-    width: 455px;
+    width: 31.6%;
     height: 840px;
     display: flex;
     flex-direction: column;
@@ -156,7 +156,7 @@ html {
     font-weight: 700;
     line-height: normal;
     transform-origin: center;
-    transform:rotate(-90deg) translateX(-40px) translateY(-10px);
+    transform:rotate(-90deg) translateX(-40px) translateY(-1%);
 }
 
 .biography-name {
@@ -192,6 +192,7 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    max-width: 375px;
 }
 
 .designers-title {
