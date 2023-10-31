@@ -3,101 +3,113 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Otus lesson 3</title>
+  <title>Otus lesson 4</title>
+  <link href="./css/style.css" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bitter:wght@300;400;700&family=Roboto:wght@400;500;700&display=swap"
+    rel="stylesheet">
+
 </head>
 
 <body>
   <header>
-    <nav>
-      <ul>
-        <li>Biography</li>
-        <li>Designers</li>
-        <li>Testimonials</li>
-        <li>Strong points</li>
+    <nav class="navigation">
+      <ul class="nav-list">
+        <li><a href="#" class="nav-link">Biography</a></li>
+        <li><a href="#" class="nav-link">Designers</a></li>
+        <li><a href="#" class="nav-link">Testimonials</a></li>
+        <li><a href="#" class="nav-link">Strong points</a></li>
       </ul>
     </nav>
   </header>
   <main>
     <!-- hero -->
-    <section>
-      <h1>Mod Studio</h1>
-      <p>Modern Web Studio</p>
+    <section class="hero-section">
+      <div class="hero-innerblock">
+        <div class="hero-message">
+          <h1 class="hero-title">Mod Studio</h1>
+          <p class="hero-par">Modern Web Studio</p>
+        </div>
+      </div>
     </section>
     <!-- биография -->
     <section>
-      <h2>Biography</h2>
+      <h2 class="biography-title">Biography</h2>
       <img src="img/katya.jpg" alt="Katya Mills Art Director">
-      <p>Katya Mills</p>
-      <p>Art Director</p>
-      <p>Scenography / Styling / Creative Photography / Design</p>
+      <p class="biography-name">Katya Mills</p>
+      <p class="biography-par">Art Director</p>
+      <p class="biography-par">Scenography / Styling / Creative Photography / Design</p>
       <!-- как вариант можно вот так с <br>
           <p>Art Director<br>
           Scenography / Styling / Creative Photography / Design</p>
         -->
 
-      <hr> <!--там на макете черточка коротенькая, ее можно попытаться сдесть потом стилями-->
+      <hr class="biography-dash"> <!--там на макете черточка коротенькая, ее можно попытаться сдесть потом стилями-->
 
-      <blockquote>“The more I deal with the work as something that is my own, as something that is personal,
+      <blockquote class="biography-quote">“The more I deal with the work as something that is my own, as something that
+        is personal,
         the more successful it is.”</blockquote>
     </section>
     <!-- Дизайнеры -->
     <section>
-      <h2>Designers</h2>
+      <h2 class="designers-title">Designers</h2>
       <div>
         <img src="img/jess-wonder.jpg" alt="Jess Wonder Photo">
         <!-- вот тут я не уверен, что H3 надо может просто P -->
         <!--Стиль, т.к. лень перепечатывать большими буквами-->
-        <h3 style="text-transform: uppercase">Jess Wonder</h3>
-        <p><strong>From/</strong> Be more flower</p>
-        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+        <h3 class="designers-name">Jess Wonder</h3>
+        <p class="designers-par"><strong>From/</strong> Be more flower</p>
+        <p class="designers-par"><strong>Skills/</strong> Design Strategy / Marketing</p>
       </div>
       <div>
         <img src="img/kameron-clein.jpg" alt="Kameron Clein Photo">
-        <h3 style="text-transform: uppercase">Kameron Clein</h3>
-        <p><strong>From/</strong> Be more flower
+        <h3 class="designers-name">Kameron Clein</h3>
+        <p class="designers-par"><strong>From/</strong> Be more flower
         </p>
-        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+        <p class="designers-par"><strong>Skills/</strong> Design Strategy / Marketing</p>
       </div>
       <div>
         <img src="img/louisse-red.jpg" alt="Louisse Red">
-        <h3 style="text-transform: uppercase">Louisse Red</h3>
-        <p><strong>From/</strong> Be more flower
+        <h3 class="designers-name">Louisse Red</h3>
+        <p class="designers-par"><strong>From/</strong> Be more flower
         </p>
-        <p><strong>Skills/</strong> Design Strategy / Marketing</p>
+        <p class="designers-par"><strong>Skills/</strong> Design Strategy / Marketing</p>
       </div>
       <div>
         <img src="img/kameron-clein.jpg" alt="Kameron Clein Photo">
-        <h3 style="text-transform: uppercase">Kameron Clein</h3>
-        <p><strong>From/</strong> Be more flower
+        <h3 class="designers-name">Kameron Clein</h3>
+        <p class="designers-par"><strong>From/</strong> Be more flower
         </p>
         <p><strong>Skills/</strong> Design Strategy / Marketing</p>
       </div>
     </section>
     <!-- Отзывы -->
     <section>
-      <h2>Testimonials</h2>
+      <h2 class="testimon-title">Testimonials</h2>
       <div><!-- левую и правую часть в отедельные div, надо или нет хз, но я бы потом потом стилями "выравнивал" их-->
         <div>
-          <p>
-            <strong>Website</strong><br>
+          <p class="testimon-link"><strong>Website</strong><br>
             <a href="#">www.whitepapers.com</a>
           </p>
         </div>
         <div>
-          <p>
+          <p class="testimon-link">
             <strong>Creativity</strong><br>
             <a href="#">www.whitepapers.com</a>
           </p>
         </div>
         <div>
-          <p><strong>Creativity</strong><br>
+          <p class="testimon-link"><strong>Creativity</strong><br>
             <a href="#">www.whitepapers.com</a>
           </p>
         </div>
         <img src="img/restaurant.jpg" alt="retaurant photo">
       </div>
       <div>
-        <p>
+        <p class="testimon-text">
           I just really want to do good work and work with some great people, people who challenge me.
         </p>
         <img src="img/string-bag.jpg" alt="Авоська">
@@ -105,12 +117,12 @@
     </section>
     <!-- Сильные стороны, очень сильные-->
     <section>
-      <h2>Strong points</h2>
+      <h2 class="sp-title">Strong points</h2>
       <img src="img/room.jpg" alt="Room Design">
       <img src="img/chair.jpg" alt="Chair and room Design">
       <div>
-        <h3>Strengths</h3>
-        <ul>
+        <h3 class="sp-strengths">Strengths</h3>
+        <ul class="sp-list">
           <li>Interiors</li>
           <li>Outdoors</li>
           <li>Portraits</li>
