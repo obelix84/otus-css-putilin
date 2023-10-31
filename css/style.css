@@ -156,7 +156,7 @@ html {
     font-weight: 700;
     line-height: normal;
     transform-origin: center;
-    transform:rotate(-90deg) translateX(-40px) translateY(-1%);
+    transform:rotate(-90deg) translateX(-40px) translateY(-43%);
 }
 
 .biography-name {
