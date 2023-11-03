@@ -120,7 +120,6 @@ html {
 }
 
 .biography-left {
-    width: 39.7%;
     height: 840px;
 }
 
@@ -130,7 +129,7 @@ html {
 
 .biography-center {
     display: flex;
-    width: 9.7%;
+    padding-right: 30px;
     height: 840px;
     flex-direction: column;
     justify-content: flex-start;
@@ -138,7 +137,6 @@ html {
 }
 
 .biography-right {
-    width: 31.6%;
     height: 840px;
     display: flex;
     flex-direction: column;
