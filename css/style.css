@@ -120,28 +120,32 @@ html {
 }
 
 .biography-left {
-    height: 840px;
+    display:flex;
+    justify-content: right;
+    flex-grow:4;
+
 }
 
 .biography-img {
-    max-height: 840px;
+    width: 100%;
+    max-width: 571px;
+    object-fit: cover;
 }
 
 .biography-center {
     display: flex;
-    padding-right: 30px;
-    height: 840px;
+    flex-grow:1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
 }
 
 .biography-right {
-    height: 840px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 35px;
+    flex-grow: 3;
 }
 
 
