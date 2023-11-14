@@ -71,6 +71,7 @@ html {
     background-repeat: no-repeat;
     height: 630px;
     position: relative;
+    margin-bottom: 150px;
 }
 /*лучше flex, но мы его не проходили*/
 .hero-innerblock {
@@ -112,6 +113,42 @@ html {
     line-height: normal;
 }
 
+.biography-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.biography-left {
+    display:flex;
+    justify-content: right;
+    flex-grow:4;
+
+}
+
+.biography-img {
+    width: 100%;
+    max-width: 571px;
+    object-fit: cover;
+}
+
+.biography-center {
+    display: flex;
+    flex-grow:1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.biography-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    flex-grow: 3;
+}
+
+
 .biography-title {
     color: #000;
     text-align: right;
@@ -120,6 +157,8 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transform-origin: center;
+    transform:rotate(-90deg) translateX(-40px) translateY(-43%);
 }
 
 .biography-name {
@@ -145,6 +184,7 @@ html {
     width: 1.25rem;
     height: 0.375rem;
     background: #0D0D0D;
+    margin-bottom: 18px;
 }
 
 .biography-quote {
@@ -154,6 +194,7 @@ html {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    max-width: 375px;
 }
 
 .designers-title {
