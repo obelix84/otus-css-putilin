@@ -197,6 +197,12 @@ html {
     max-width: 375px;
 }
 
+.designers-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 150px;
+}
+
 .designers-title {
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -204,6 +210,24 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-left: 8.5%;
+    margin-bottom: 30px;
+}
+
+.designers-carousel-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 20px;
+    overflow: auto;
+}
+
+.designers-high-div {
+    padding-left: 42%;
+}
+
+.designers-img {
+    margin-bottom: 23px;
 }
 
 .designers-name {
