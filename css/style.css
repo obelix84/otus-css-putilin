@@ -197,6 +197,10 @@ html {
     max-width: 375px;
 }
 
+.designers-section {
+    margin-bottom: 150px;
+}
+
 .designers-title {
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -226,6 +230,28 @@ html {
     line-height: normal;
 }
 
+.testimon-section {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 16% 34% 10% 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 150px;
+}
+
+.testimon-links-col {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding-left: 71%;
+}
+
+.testimon-title-col {
+    padding-left: 14%;
+    box-sizing: border-box;
+}
+
 .testimon-title {
     color: #000;
     text-align: right;
@@ -234,9 +260,19 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transform-origin: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
 }
 
-.testimon-link {
+.testimon-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25%;
+    padding-bottom: 14%;
+    padding-right: 20%;
+    text-align: left;
     color: #000;
     font-family: 'Roboto', sans-serif;
     font-size: 1rem;
@@ -245,6 +281,20 @@ html {
     line-height: normal;
     text-transform: capitalize;
 }
+
+.testimon-link {
+    transform-origin: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.testimon-img {
+    box-sizing: border-box;
+    padding-left: 4.4%;
+    object-fit: cover;
+    width: 100%;
+}
+
 /* тут тоже не вижу смысла плодить лишние названия классов, будет ИМХО загромождать код */
 .testimon-link a {
     color: #000;
@@ -256,13 +306,27 @@ html {
     text-decoration: none;
 }
 
+.testimon-text-col {
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.testimon-right-img {
+    width: 48%;
+}
+
 .testimon-text {
+    width: 48%;
     color: #000;
     text-align: center;
     font-family: 'Bitter', serif;
     font-size: 2rem;
     font-style: normal;
-    font-weight: 300;
+    font-weight: 400;
     line-height: normal;
 }
 
