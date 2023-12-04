@@ -41,6 +41,7 @@ html {
     font-family: 'Roboto', sans-serif;
     text-align: right;
     display: block;
+    width: 100%;
     position: absolute;
     top: 50%;
     right: 0;
@@ -51,7 +52,7 @@ html {
 не вижу смысла плодить еще к каждому тегу <LI> еще по одному классу, а основные св-ва наследуются*/
 .nav-list li {
     display: inline-block;
-    padding-left: 55px;
+    padding-left: 4%;
 }
 
 .nav-link {
@@ -81,7 +82,7 @@ html {
     background-color: white;
     width: 48%;
     /* всего 1440, ширина блока 690 итого имеем около 48%*/
-    min-width: 690px;
+    min-width: 690px; 
     /* ограничим снизу, чтоб не было уже*/
     height: 360px;
     position: absolute;
@@ -168,12 +169,14 @@ html {
 }
 
 .biography-name {
+    display: inline-block;
     color: #000;
     font-family: 'Playfair Display', serif;
     font-size: 5.375rem;
     font-style: normal;
     font-weight: 500;
     line-height: normal;
+    padding-right: 50%;
 }
 
 .biography-par {
@@ -372,7 +375,7 @@ html {
         -ms-flex-align: start;
             align-items: start;
     gap: 20px;
-    overflow: hidden;
+    overflow: auto;
 }
 
 .sp-title {
@@ -441,4 +444,140 @@ html {
     .sp-div-strengths-grid :is(img, div) {
         margin-right: 20px;
     } */
+}
+
+@media (max-width: 768px) { 
+    .nav-list {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-around;
+    }
+
+    .nav-list li {
+        padding-left:0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+    
+    .hero-section {
+        height: 500px;
+        margin-bottom: 80px;
+    }
+    
+    .hero-innerblock {
+        min-width: 550px;
+        height: 310px;
+    }
+
+    .hero-message {
+        padding-top: 95px;
+    }
+
+    .biography-section{
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    .biography-center {
+        order: 1;
+    }
+
+    .biography-right {
+        order: 2;
+        margin-bottom: 50px;
+    }
+    
+    .biography-left {
+        order: 3;
+        width: 100%;
+        max-height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .biography-img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .biography-name {
+        padding-right: 0;
+    }
+
+    .designers-section {
+        margin-bottom: 80px;
+    }
+
+    .designers-title {
+        margin-left: 0;
+    }
+
+    .designers-div {
+        width: 336px;
+    }
+
+    .designers-high-div {
+        padding-left: 0;
+    }
+
+    .designers-img {
+        width: 336px;
+        height: 440px;
+        object-fit: cover;
+    }
+
+    .testimon-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimon-title {
+        transform-origin: center;
+        writing-mode: unset;
+        transform: rotate(360deg); 
+    }
+
+    .testimon-links-col {
+        grid-column: 2;
+        grid-row: 3;
+        padding-left: 0;
+    }
+
+    .testimon-title-col {
+        grid-column: 1/3;
+        grid-row: 1;
+        padding-bottom: 1.75rem;
+    }
+
+    .testimon-text-col {
+        grid-column: 1/3;
+        grid-row: 2;
+        padding-right: 0;
+        padding-bottom: 1.75rem;
+        flex-direction: row;
+    }
+
+    .testimon-img {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .testimon-right-img {
+        width: 50%;
+        max-height: 330px ;
+        object-fit: cover;
+    }
+
+    .testimon-link {
+        border: 1px solid blue;
+    }
+
+    .testimon-div {
+        display: flex;
+        border: 1px solid red;    
+
+    }
+
 }
