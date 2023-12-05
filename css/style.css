@@ -247,7 +247,6 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
-    text-transform: uppercase;
 }
 
 .designers-par {
@@ -432,7 +431,7 @@ html {
         display: -ms-grid;
         display: grid;
         grid-auto-flow: column;
-        overflow: hidden;
+        overflow: auto;
     }
 
     .sp-div-strengths-grid > * {
@@ -543,6 +542,7 @@ html {
         grid-column: 2;
         grid-row: 3;
         padding-left: 0;
+        
     }
 
     .testimon-title-col {
@@ -571,13 +571,44 @@ html {
     }
 
     .testimon-link {
-        border: 1px solid blue;
+        writing-mode:unset;
+        display: inline;
+        transform-origin: center;
+        transform: rotate(360deg);
+        display:flex;
+        flex-direction: column-reverse;
     }
 
     .testimon-div {
-        display: flex;
-        border: 1px solid red;    
-
+        align-items: start;
+        padding-left: 5%;
     }
 
+    .testimon-text {
+        font-size: 1.875rem;
+    }
+
+    .sp-div-strengths {
+        overflow: auto;
+    }
+
+    .sp-title {
+        margin-left: 0;
+    }
+
+    .sp-text-strengths {
+        order: -1;
+    }
+
+    .sp-strengths {
+        font-size: 3rem;
+    }
+    
+    .sp-list {
+        font-size: 1.5rem;
+    }
+
+    .sp-image {
+        height: 450px;
+    }
 }
