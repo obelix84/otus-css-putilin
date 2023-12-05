@@ -34,6 +34,7 @@ html {
     margin-left: 23px;
     margin-right: 20px;
 }
+
 /*ну вот такой вот метод, дучше flex, но мы его не проходили*/
 .nav-list {
     list-style-type: none;
@@ -45,6 +46,7 @@ html {
     right: 0;
     transform: translateY(-50%);
 }
+
 /* тут сделал так, т.к. в навигации только один список со ссылками и 
 не вижу смысла плодить еще к каждому тегу <LI> еще по одному классу, а основные св-ва наследуются*/
 .nav-list li {
@@ -73,11 +75,14 @@ html {
     position: relative;
     margin-bottom: 150px;
 }
+
 /*лучше flex, но мы его не проходили*/
 .hero-innerblock {
     background-color: white;
-    width: 48%; /* всего 1440, ширина блока 690 итого имеем около 48%*/
-    min-width: 690px; /* ограничим снизу, чтоб не было уже*/
+    width: 48%;
+    /* всего 1440, ширина блока 690 итого имеем около 48%*/
+    min-width: 690px;
+    /* ограничим снизу, чтоб не было уже*/
     height: 360px;
     position: absolute;
     top: 0;
@@ -86,6 +91,7 @@ html {
     right: 0;
     margin: auto;
 }
+
 /* т.к. высота блока задна, можно padding задать и отцетрировать по высоте*/
 .hero-message {
     padding-top: 110px;
@@ -120,9 +126,9 @@ html {
 }
 
 .biography-left {
-    display:flex;
+    display: flex;
     justify-content: right;
-    flex-grow:4;
+    flex-grow: 4;
 
 }
 
@@ -134,7 +140,7 @@ html {
 
 .biography-center {
     display: flex;
-    flex-grow:1;
+    flex-grow: 1;
     flex-direction: column;
     justify-content: flex-start;
     align-items: start;
@@ -158,7 +164,7 @@ html {
     font-weight: 700;
     line-height: normal;
     transform-origin: center;
-    transform:rotate(-90deg) translateX(-40px) translateY(-43%);
+    transform: rotate(-90deg) translateX(-40px) translateY(-43%);
 }
 
 .biography-name {
@@ -350,6 +356,25 @@ html {
     line-height: normal;
 }
 
+.sp-section {
+    padding-left: 20px;
+    padding-bottom: 150px;
+}
+
+.sp-div-strengths {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    gap: 20px;
+    overflow: hidden;
+}
+
 .sp-title {
     color: #000;
     font-family: 'Roboto', sans-serif;
@@ -357,6 +382,8 @@ html {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    margin-left: 17%;
+    margin-bottom: 30px;
 }
 
 .sp-strengths {
@@ -366,6 +393,25 @@ html {
     font-style: normal;
     font-weight: 500;
     line-height: 100%;
+    padding-bottom: 28px;
+}
+
+.sp-text-strengths {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-left: 37px;
+    padding-right: 37px;
 }
 
 .sp-list {
@@ -376,4 +422,23 @@ html {
     font-weight: 400;
     line-height: normal;
     list-style-type: none;
+}
+
+@supports (display: grid) {
+    .sp-div-strengths {
+        display: -ms-grid;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: hidden;
+    }
+
+    .sp-div-strengths-grid > * {
+        margin-right: 20px;
+    }
+
+    /* 
+    Можно и так, но переносимость ниже
+    .sp-div-strengths-grid :is(img, div) {
+        margin-right: 20px;
+    } */
 }
