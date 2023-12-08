@@ -63,6 +63,10 @@ html {
     font-weight: 500;
 }
 
+.hide-or-not {
+    display: inline;
+}
+
 .nav-link:hover {
     text-decoration: underline;
 }
@@ -82,7 +86,7 @@ html {
     background-color: white;
     width: 48%;
     /* всего 1440, ширина блока 690 итого имеем около 48%*/
-    min-width: 690px; 
+    min-width: 690px;
     /* ограничим снизу, чтоб не было уже*/
     height: 360px;
     position: absolute;
@@ -196,6 +200,10 @@ html {
     margin-bottom: 18px;
 }
 
+.biography-dash-hided {
+    display: none;
+}
+
 .biography-quote {
     color: #0D0D0D;
     font-family: 'Bitter', serif;
@@ -204,6 +212,24 @@ html {
     font-weight: 400;
     line-height: normal;
     max-width: 375px;
+}
+
+.biography-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: '/';
+}
+
+.biography-list li {
+    margin-left: 12px;
+    padding-left: 5px;
+}
+
+
+.biography-list li:first-child {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
 }
 
 .designers-section {
@@ -368,11 +394,11 @@ html {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
     -webkit-box-align: start;
-        -ms-flex-align: start;
-            align-items: start;
+    -ms-flex-align: start;
+    align-items: start;
     gap: 20px;
     overflow: auto;
 }
@@ -404,14 +430,14 @@ html {
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding-left: 37px;
     padding-right: 37px;
 }
@@ -434,7 +460,7 @@ html {
         overflow: auto;
     }
 
-    .sp-div-strengths-grid > * {
+    .sp-div-strengths-grid>* {
         margin-right: 20px;
     }
 
@@ -445,7 +471,7 @@ html {
     } */
 }
 
-@media (max-width: 768px) { 
+@media (max-width: 768px) {
     .nav-list {
         display: flex;
         width: 100%;
@@ -454,18 +480,18 @@ html {
     }
 
     .nav-list li {
-        padding-left:0;
+        padding-left: 0;
     }
 
     .nav-link {
         font-size: 1.2rem;
     }
-    
+
     .hero-section {
         height: 500px;
         margin-bottom: 80px;
     }
-    
+
     .hero-innerblock {
         min-width: 550px;
         height: 310px;
@@ -475,7 +501,7 @@ html {
         padding-top: 95px;
     }
 
-    .biography-section{
+    .biography-section {
         flex-wrap: wrap;
         margin-bottom: 80px;
     }
@@ -488,7 +514,7 @@ html {
         order: 2;
         margin-bottom: 50px;
     }
-    
+
     .biography-left {
         order: 3;
         width: 100%;
@@ -535,14 +561,14 @@ html {
     .testimon-title {
         transform-origin: center;
         writing-mode: unset;
-        transform: rotate(360deg); 
+        transform: rotate(360deg);
     }
 
     .testimon-links-col {
         grid-column: 2;
         grid-row: 3;
         padding-left: 0;
-        
+
     }
 
     .testimon-title-col {
@@ -566,16 +592,16 @@ html {
 
     .testimon-right-img {
         width: 50%;
-        max-height: 330px ;
+        max-height: 330px;
         object-fit: cover;
     }
 
     .testimon-link {
-        writing-mode:unset;
+        writing-mode: unset;
         display: inline;
         transform-origin: center;
         transform: rotate(360deg);
-        display:flex;
+        display: flex;
         flex-direction: column-reverse;
     }
 
@@ -603,7 +629,7 @@ html {
     .sp-strengths {
         font-size: 3rem;
     }
-    
+
     .sp-list {
         font-size: 1.5rem;
     }
@@ -611,4 +637,247 @@ html {
     .sp-image {
         height: 450px;
     }
+}
+
+@media (max-width: 450px) {
+    .navigation {
+        margin-left: 0;
+        margin-right: 0;
+        position: fixed;
+        border-top: 1px solid #000;
+        background-color: #ffff;
+        bottom: 0;
+        width: 100vw;
+        height: 82px;
+        z-index: 10000;
+    }
+
+    .hide-or-not {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: unset;
+        transform: translateY(37%);
+        top: 0;
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    .hero-section {
+        background: url("/img/hero-bg-layer-sm.jpg");
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        height: 764px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 80px;
+    }
+
+    .hero-innerblock {
+        display: flex;
+        flex-direction: column;
+        height: 344px;
+        width: 100%;
+        min-width: unset;
+        margin: 0;
+    }
+
+    .hero-title {
+        font-size: 4.375rem;
+    }
+
+    .hero-par {
+        font-size: 1.125rem;
+    }
+
+    /* .biography-section {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+
+    .biography-list {
+        display: flex;
+        flex-direction: column;
+        list-style-position: outside;
+        list-style-type: '-';
+    }
+
+    .biography-list li {
+        margin-left: 5px;
+        padding-left: 5px;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .biography-list li:first-child {
+        list-style-type: '-';
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+
+    .biography-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        transform: rotate(360deg);
+        /*тут можно tranlate сделать и сдвинуть блок вниз, я величину родительского блока сделал в 0
+         и блок "выперло" на соседний, колхоз)))
+        */
+    }
+
+    .biography-left {
+        max-height: 400px;
+        order: -1;
+    }
+
+    .biography-right {
+        gap: 41px;
+        order: -2;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .biography-center {
+        height: 0;
+        /*чтоб блок "выперло" вниз*/
+        align-items: end;
+        order: -3;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .biography-name {
+        order: 3;
+    }
+
+    .biography-quote {
+        order: 2;
+    }
+
+    .biography-par {
+        order: 1;
+        padding-bottom: 16px;
+    }
+
+    .biography-dash {
+        display: none;
+    }
+
+    .biography-dash-hided {
+        display: inline;
+    }
+
+    .biography-quote {
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .biography-name {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .designers-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    .designers-section {
+        padding-left: 16px;
+        padding-right: 0;
+    }
+
+    .testimon-section {
+        margin-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .testimon-title {
+        font-size: 1.125REM;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .testimon-text-col {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .testimon-text {
+        width: 83%;
+    }
+
+    .testimon-right-img {
+        width: 100%;
+    }
+
+    .testimon-img {
+        display: none;
+    }
+
+    .testimon-links-col {
+        grid-column: 1/3;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 30px;
+        height: 107px;
+    }
+
+    .testimon-div {
+        height: unset;
+        padding: 0;
+    }
+
+    .sp-section {
+        padding-left: 16px;
+        padding-bottom: 0;
+        margin-bottom: 80px;
+    }
+
+    .sp-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .sp-text-strengths {
+        padding: 0;
+        align-items: start;
+        margin-bottom: 24px;
+    }
+
+    .sp-list {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .sp-list li {
+        margin-bottom: 8px;
+    }
+
 }
