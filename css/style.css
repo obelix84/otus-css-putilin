@@ -679,7 +679,7 @@ html {
         width: 100vw;
         height: 82px;
         z-index: 10000;
-    }
+    } 
 
     .hide-or-not {
         display: none;
@@ -734,10 +734,10 @@ html {
         font-size: 1.125rem;
     }
 
-    /* .biography-section {
+    .biography-section {
         padding-left: 0;
         padding-right: 0;
-    } */
+    } 
 
     .biography-list {
         display: flex;

@@ -4,7 +4,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>Otus homework 12</title>
+  <title>Otus homework 13</title>
+  <script src="https://cdn.tailwindcss.com"></script>
   <link href="./css/style.css" rel="stylesheet">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,22 +18,38 @@
 
 <body>
   <header>
-    <nav class="navigation">
+    <!-- <nav class="navigation">
       <ul class="nav-list">
         <li><a href="#biography" class="nav-link">B<span class="hide-or-not">iography</span></a></li>
         <li><a href="#designers" class="nav-link">D<span class="hide-or-not">esigners</span></a></li>
         <li><a href="#testimon" class="nav-link">T<span class="hide-or-not">estimonials</span></a></li>
         <li><a href="#sp" class="nav-link">S<span class="hide-or-not">trong points</span></a></li>
       </ul>
+    </nav> -->
+    <nav class="h-[82px] ml-0 mr-0 fixed bottom-0 w-screen z-50 bg-white border-t-2 border-black min-[450px]:w-auto min-[450px]:z-0 min-[450px]:h-[135px] min-[450px]:relative min-[450px]:border-0 md:ml-5 md:mr-5 box-border">
+      <ul class="flex w-full top-0 right-0 items-center list-none place-content-around translate-y-[37%] pl-0 md:text-right md:block min-[450px]:absolute min-[450px]:top-1/2 min-[450px]:right-0 min-[450px]:-translate-y-2/4">
+        <li class="pl-0 md:pl-[4%] md:inline-block "><a href="#biography" class="hover:underline font-bold text-4xl text-black min-[450px]:text-lg md:text-2xl min-[450px]:font-medium p-1 no-underline">B<span class="hidden min-[450px]:inline">iography</span></a></li>
+        <li class="pl-0 md:pl-[4%] md:inline-block"><a href="#designers" class="hover:underline font-bold text-4xl text-black min-[450px]:text-lg md:text-2xl min-[450px]:font-medium p-1 no-underline">D<span class="hidden min-[450px]:inline">esigners</span></a></li>
+        <li class="pl-0 md:pl-[4%] md:inline-block"><a href="#testimon" class="hover:underline font-bold text-4xl text-black  min-[450px]:text-lg md:text-2xl min-[450px]:font-medium p-1 no-underline">T<span class="hidden min-[450px]:inline">estimonials</span></a></li>
+        <li class="pl-0 md:pl-[4%] md:inline-block"><a href="#sp" class="hover:underline font-bold text-4xl text-black min-[450px]:text-lg md:text-2xl min-[450px]:font-medium p-1 no-underline">S<span class="hidden min-[450px]:inline">trong points</span></a></li>
+      </ul>
     </nav>
   </header>
   <main>
     <!-- hero -->
-    <section class="hero-section">
+    <!-- <section class="hero-section">
       <div class="hero-innerblock">
         <div class="hero-message">
           <h1 class="hero-title">Mod Studio</h1>
           <p class="hero-par">Modern Web Studio</p>
+        </div>
+      </div>
+    </section> -->
+    <section class="flex flex-col justify-start bg-[url('/img/hero-bg-layer-sm.jpg')] mb-[80px] h-[764px] min-[450px]:h-[500px] min-[450px]:relative min-[450px]:h-[630px] min-[450px]:mb-[150px] min-[450px]:bg-[url('/img/hero-bg-layer.jpg')] bg-cover bg-center bg-no-repeat">
+      <div class="flex flex-col m-0 h-[344px] min-w-[unset] w-full h-[310px] min-[450px]:min-w-[550px] min-[450px]:w-[48%] md:h-[360px] md:min-w-[690px] min-[450px]:absolute bg-white top-0 bottom-0 left-0 right-0 min-[450px]:m-auto">
+        <div class="pt-[95px] md:pt-[110px] font-serif">
+          <h1 class="text-[4.375rem] text-black text-center font-['Playfair_Display'] min-[450px]:text-[5.375rem] leading-tight font-medium mb-[14px]">Mod Studio</h1>
+          <p class="text-[1.125rem] text-black text-center font-['Roboto'] font-medium min-[450px]:text-lg leading-normal">Modern Web Studio</p>
         </div>
       </div>
     </section>
