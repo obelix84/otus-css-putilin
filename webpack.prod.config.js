@@ -35,8 +35,22 @@ const config = {
             },
             {
                 test: /\.css$/i,
-                use: [stylesHandler, 'css-loader'],
-            },
+                use: [stylesHandler, 
+                    'css-loader',
+                    {
+                        loader: "postcss-loader", 
+                            options: {
+                                postcssOptions: { 
+                                    plugins: [
+                                        "autoprefixer",
+                                        "postcss-preset-env",
+                                        //"postcss-deadcss",
+                                        //"at-rule-packer",
+                                        "cssnano" 
+                                    ],},
+                                },
+                    }]
+            },  
             {
                 test: /\.s[ac]ss$/i,
                 use: [stylesHandler, 'css-loader', 'sass-loader'],
