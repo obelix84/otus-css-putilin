@@ -1,0 +1,915 @@
+/*!*********************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./src/css/style.css ***!
+  \*********************************************************************/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        local("Playfair Display Medium"),
+        url(assets/b6b10a3a3492328a0c3f-PlayfairDisplay-Medium.ttf);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: "Playfair Display";
+    src:
+        local("Playfair Display Regular"),
+        url(assets/6a97b5c64f316f567fa1-PlayfairDisplay-Regular.ttf);
+    font-weight: 400;
+}
+
+html {
+    font-size: 16px;
+    /*должен быть по умолчанию, но пусть будет на всякий*/
+    line-height: normal;
+    /* приблизительно 1.2  */
+    font-family: 'Roboto', sans-serif;
+    /*По умолчанию поставил Roboto по макету не понятно*/
+    scroll-behavior: smooth;
+}
+
+.navigation {
+    height: 135px;
+    position: relative;
+    margin-left: 23px;
+    margin-right: 20px;
+}
+
+/*ну вот такой вот метод, дучше flex, но мы его не проходили*/
+.nav-list {
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    text-align: right;
+    display: block;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+}
+
+/* тут сделал так, т.к. в навигации только один список со ссылками и 
+не вижу смысла плодить еще к каждому тегу <LI> еще по одному классу, а основные св-ва наследуются*/
+.nav-list li {
+    display: inline-block;
+    padding-left: 4%;
+}
+
+.nav-link {
+    color: #000;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    padding: 4px;
+}
+
+.hide-or-not {
+    display: inline;
+}
+
+.hero-section {
+    background: url(assets/14b30dbf538850bb8268-hero-bg-layer.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-repeat: no-repeat;
+    height: 630px;
+    position: relative;
+    margin-bottom: 150px;
+}
+
+/*лучше flex, но мы его не проходили*/
+.hero-innerblock {
+    background-color: white;
+    width: 48%;
+    /* всего 1440, ширина блока 690 итого имеем около 48%*/
+    min-width: 690px;
+    /* ограничим снизу, чтоб не было уже*/
+    height: 360px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+/* т.к. высота блока задна, можно padding задать и отцетрировать по высоте*/
+.hero-message {
+    padding-top: 110px;
+}
+
+.hero-title {
+    color: #000;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.2;
+    /*а здесь сделаем так*/
+    margin-bottom: 14px;
+}
+
+.hero-par {
+    color: #000;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-section {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 150px;
+}
+
+.biography-left {
+    display: flex;
+    justify-content: right;
+    flex-grow: 4;
+
+}
+
+.biography-img {
+    width: 100%;
+    max-width: 571px;
+    object-fit: cover;
+}
+
+.biography-center {
+    display: flex;
+    flex-grow: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+}
+
+.biography-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 35px;
+    flex-grow: 3;
+}
+
+
+.biography-title {
+    color: #000;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform-origin: center;
+    transform: rotate(-90deg) translateX(-40px) translateY(-43%);
+}
+
+.biography-name {
+    display: inline-block;
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding-right: 50%;
+}
+
+.biography-par {
+    color: #0D0D0D;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.biography-dash {
+    border: 0;
+    width: 1.25rem;
+    height: 0.375rem;
+    background: #0D0D0D;
+    margin-bottom: 18px;
+}
+
+.biography-dash-hided {
+    display: none;
+}
+
+.biography-quote {
+    color: #0D0D0D;
+    font-family: 'Bitter', serif;
+    font-size: 1.625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 375px;
+}
+
+.biography-list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: '/';
+}
+
+.biography-list li {
+    margin-left: 12px;
+    padding-left: 5px;
+}
+
+
+.biography-list li:first-child {
+    list-style-type: none;
+    padding-left: 0;
+    margin-left: 0;
+}
+
+.designers-section {
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 150px;
+}
+
+.designers-title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 8.5%;
+    margin-bottom: 30px;
+}
+
+.designers-carousel-div {
+    display: flex;
+    justify-content: flex-start;
+    align-items: end;
+    gap: 20px;
+    overflow: auto;
+}
+
+.designers-high-div {
+    padding-left: 42%;
+}
+
+.designers-img {
+    margin-bottom: 23px;
+}
+
+.designers-name {
+    text-transform: uppercase;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.designers-par {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.testimon-section {
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 16% 34% 10% 40%;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 150px;
+}
+
+.testimon-links-col {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-around;
+    padding-left: 71%;
+}
+
+.testimon-title-col {
+    padding-left: 14%;
+    box-sizing: border-box;
+}
+
+.testimon-title {
+    color: #000;
+    text-align: right;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    transform-origin: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.testimon-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 25%;
+    padding-bottom: 14%;
+    padding-right: 20%;
+    text-align: left;
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.testimon-link {
+    transform-origin: center;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+}
+
+.testimon-img {
+    box-sizing: border-box;
+    padding-left: 4.4%;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* тут тоже не вижу смысла плодить лишние названия классов, будет ИМХО загромождать код */
+.testimon-link a {
+    color: #000;
+    text-transform: none;
+    text-decoration: none;
+}
+
+.testimon-link a:hover {
+    text-decoration: none;
+}
+
+.testimon-text-col {
+    padding-right: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+}
+
+.testimon-right-img {
+    width: 48%;
+}
+
+.testimon-text {
+    width: 48%;
+    color: #000;
+    text-align: center;
+    font-family: 'Bitter', serif;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.sp-section {
+    padding-left: 20px;
+    padding-bottom: 150px;
+}
+
+.sp-div-strengths {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
+    gap: 20px;
+    overflow: auto;
+}
+
+.sp-title {
+    color: #000;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-left: 17%;
+    margin-bottom: 30px;
+}
+
+.sp-strengths {
+    color: #000;
+    font-family: 'Playfair Display', serif;
+    font-size: 5.375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    padding-bottom: 28px;
+}
+
+.sp-text-strengths {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.sp-list {
+    color: #000;
+    font-family: 'Bitter', serif;
+    font-size: 2.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    list-style-type: none;
+}
+
+@supports (display: grid) {
+    .sp-div-strengths {
+        display: -ms-grid;
+        display: grid;
+        grid-auto-flow: column;
+        overflow: auto;
+    }
+
+    .sp-div-strengths-grid>* {
+        margin-right: 20px;
+    }
+
+    /* 
+    Можно и так, но переносимость ниже
+    .sp-div-strengths-grid :is(img, div) {
+        margin-right: 20px;
+    } */
+}
+
+/* анимация */
+.nav-link:hover {
+	animation: shadow-drop 0.4s ease-out both;
+}
+
+@keyframes shadow-drop {
+    0% {
+      box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+    }
+    100% {
+      box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.35);
+    }
+}
+
+.designers-img:hover {
+	animation: pulsate-img 0.5s ease-in-out 3 both;
+}
+
+@keyframes pulsate-img {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(0.95);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+
+@media (max-width: 768px) {
+    .nav-list {
+        display: flex;
+        width: 100%;
+        padding-left: 0;
+        justify-content: space-around;
+    }
+
+    .nav-list li {
+        padding-left: 0;
+    }
+
+    .nav-link {
+        font-size: 1.2rem;
+    }
+
+    .hero-section {
+        height: 500px;
+        margin-bottom: 80px;
+    }
+
+    .hero-innerblock {
+        min-width: 550px;
+        height: 310px;
+    }
+
+    .hero-message {
+        padding-top: 95px;
+    }
+
+    .biography-section {
+        flex-wrap: wrap;
+        margin-bottom: 80px;
+    }
+
+    .biography-center {
+        order: 1;
+    }
+
+    .biography-right {
+        order: 2;
+        margin-bottom: 50px;
+    }
+
+    .biography-left {
+        order: 3;
+        width: 100%;
+        max-height: 600px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .biography-img {
+        max-width: 100%;
+        object-fit: cover;
+    }
+
+    .biography-name {
+        padding-right: 0;
+    }
+
+    .designers-section {
+        margin-bottom: 80px;
+    }
+
+    .designers-title {
+        margin-left: 0;
+    }
+
+    .designers-div {
+        width: 336px;
+    }
+
+    .designers-high-div {
+        padding-left: 0;
+    }
+
+    .designers-img {
+        width: 336px;
+        height: 440px;
+        object-fit: cover;
+    }
+
+    .testimon-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .testimon-title {
+        transform-origin: center;
+        writing-mode: unset;
+        transform: rotate(360deg);
+    }
+
+    .testimon-links-col {
+        grid-column: 2;
+        grid-row: 3;
+        padding-left: 0;
+
+    }
+
+    .testimon-title-col {
+        grid-column: 1/3;
+        grid-row: 1;
+        padding-bottom: 1.75rem;
+    }
+
+    .testimon-text-col {
+        grid-column: 1/3;
+        grid-row: 2;
+        padding-right: 0;
+        padding-bottom: 1.75rem;
+        flex-direction: row;
+    }
+
+    .testimon-img {
+        grid-column: 1;
+        grid-row: 3;
+    }
+
+    .testimon-right-img {
+        width: 50%;
+        max-height: 330px;
+        object-fit: cover;
+    }
+
+    .testimon-link {
+        writing-mode: unset;
+        display: inline;
+        transform-origin: center;
+        transform: rotate(360deg);
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .testimon-div {
+        align-items: start;
+        padding-left: 5%;
+    }
+
+    .testimon-text {
+        font-size: 1.875rem;
+    }
+
+    .sp-div-strengths {
+        overflow: auto;
+    }
+
+    .sp-title {
+        margin-left: 0;
+    }
+
+    .sp-text-strengths {
+        order: -1;
+    }
+
+    .sp-strengths {
+        font-size: 3rem;
+    }
+
+    .sp-list {
+        font-size: 1.5rem;
+    }
+
+    .sp-image {
+        height: 450px;
+    }
+}
+
+@media (max-width: 450px) {
+    .navigation {
+        margin-left: 0;
+        margin-right: 0;
+        position: fixed;
+        border-top: 1px solid #000;
+        background-color: #ffff;
+        bottom: 0;
+        width: 100vw;
+        height: 82px;
+        z-index: 10000;
+    }
+
+    .hide-or-not {
+        display: none;
+    }
+
+    .nav-list {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        position: unset;
+        transform: translateY(37%);
+        top: 0;
+        right: 0;
+    }
+
+    .nav-link {
+        font-size: 2.5rem;
+    }
+
+    .nav-link:hover {
+        text-decoration: underline;
+        font-weight: 700;
+    }
+
+    .hero-section {
+        background: url(assets/f63d7786e9d5f825eff8-hero-bg-layer-sm.jpg);
+        background-size: cover;
+        background-position-x: left;
+        background-position-y: bottom;
+        background-repeat: no-repeat;
+        height: 764px;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-bottom: 80px;
+    }
+
+    .hero-innerblock {
+        display: flex;
+        flex-direction: column;
+        height: 344px;
+        width: 100%;
+        min-width: unset;
+        margin: 0;
+    }
+
+    .hero-title {
+        font-size: 4.375rem;
+    }
+
+    .hero-par {
+        font-size: 1.125rem;
+    }
+
+    /* .biography-section {
+        padding-left: 0;
+        padding-right: 0;
+    } */
+
+    .biography-list {
+        display: flex;
+        flex-direction: column;
+        list-style-position: outside;
+        list-style-type: '-';
+    }
+
+    .biography-list li {
+        margin-left: 5px;
+        padding-left: 5px;
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    .biography-list li:first-child {
+        list-style-type: '-';
+        margin-left: 5px;
+        padding-left: 5px;
+    }
+
+    .biography-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        transform: rotate(360deg);
+        /*тут можно tranlate сделать и сдвинуть блок вниз, я величину родительского блока сделал в 0
+         и блок "выперло" на соседний, колхоз)))
+        */
+    }
+
+    .biography-left {
+        max-height: 400px;
+        order: -1;
+    }
+
+    .biography-right {
+        gap: 41px;
+        order: -2;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .biography-center {
+        height: 0;
+        /*чтоб блок "выперло" вниз*/
+        align-items: end;
+        order: -3;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .biography-name {
+        order: 3;
+    }
+
+    .biography-quote {
+        order: 2;
+    }
+
+    .biography-par {
+        order: 1;
+        padding-bottom: 16px;
+    }
+
+    .biography-dash {
+        display: none;
+    }
+
+    .biography-dash-hided {
+        display: inline;
+    }
+
+    .biography-quote {
+        font-size: 1.875rem;
+        font-style: normal;
+        font-weight: 300;
+    }
+
+    .biography-name {
+        font-size: 4rem;
+        font-style: normal;
+        font-weight: 400;
+    }
+
+    .designers-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+        margin-bottom: 32px;
+    }
+
+    .designers-section {
+        padding-left: 16px;
+        padding-right: 0;
+    }
+
+    .testimon-section {
+        margin-bottom: 80px;
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .testimon-title {
+        font-size: 1.125REM;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .testimon-text-col {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .testimon-text {
+        width: 83%;
+    }
+
+    .testimon-right-img {
+        width: 100%;
+    }
+
+    .testimon-img {
+        display: none;
+    }
+
+    .testimon-links-col {
+        grid-column: 1/3;
+        grid-row: 3;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: start;
+        gap: 30px;
+        height: 107px;
+    }
+
+    .testimon-div {
+        height: unset;
+        padding: 0;
+    }
+
+    .sp-section {
+        padding-left: 16px;
+        padding-bottom: 0;
+        margin-bottom: 80px;
+    }
+
+    .sp-title {
+        font-size: 1.125rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .sp-text-strengths {
+        padding: 0;
+        align-items: start;
+        margin-bottom: 24px;
+    }
+
+    .sp-list {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .sp-list li {
+        margin-bottom: 8px;
+    }
+
+}

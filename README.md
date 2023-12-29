@@ -1,15 +1,4 @@
-# 🚀 Welcome to your new awesome project!
+# 🚀 Ветка для деплоя проекта
 
-This project has been created using **webpack-cli**, you can now run
+Проект собран из ветки main для деплоя на GitHub pages
 
-```
-npm run build
-```
-
-or
-
-```
-yarn build
-```
-
-to bundle your application
