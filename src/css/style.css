@@ -7,7 +7,6 @@
     font-family: "Playfair Display";
     src:
         local("Playfair Display Medium"),
-        url("../fonts/PlayfairDisplay-Medium.woff2") format("woff2"),
         url("../fonts/PlayfairDisplay-Medium.ttf");
     font-weight: 500;
 }
@@ -16,7 +15,6 @@
     font-family: "Playfair Display";
     src:
         local("Playfair Display Regular"),
-        url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
         url("../fonts/PlayfairDisplay-Regular.ttf");
     font-weight: 400;
 }
@@ -519,10 +517,6 @@ html {
     }
 
     .hero-section {
-        background: url("../img/hero-bg-layer.jpg");
-        background-size: cover;
-        background-position-x: center;
-        background-repeat: no-repeat;
         height: 500px;
         margin-bottom: 80px;
     }
