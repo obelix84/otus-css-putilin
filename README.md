@@ -19,9 +19,9 @@ npm run build-dev
 ## Google Lighthouse
 
 Для **desktop** версии  
-![desktop](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lighthouse-desktop.png "desktop версия")  
+![desktop](https://github.com/obelix84/otus-css-putilin/support/lighthouse/lighthouse-desktop.png "desktop версия")  
 Полный отчет доступен по [ссылке](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lh-desktop.html). 
 
 Для **mobile** версии  
-![mobile](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lighthouse-mobile.png "mobile версия")  
+![mobile](https://github.com/obelix84/otus-css-putilin/support/lighthouse/lighthouse-mobile.png "mobile версия")  
 Полный отчет доступен по [ссылке](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lh-mobile.html). 
