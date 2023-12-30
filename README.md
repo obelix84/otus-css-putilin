@@ -23,5 +23,5 @@ npm run build-dev
 Полный отчет доступен по [ссылке](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lh-desktop.html). 
 
 Для **mobile** версии  
-![mobile](https://github.com/obelix84/otus-css-putilin/support/lighthouse/lighthouse-mobile.png "mobile версия")  
+![mobile](https://github.com/obelix84/otus-css-putilin/blob/5dc395a431419a6134677040120be56aca5b15ce/lighthouse/lighthouse-mobile.png "mobile версия")  
 Полный отчет доступен по [ссылке](https://github.com/obelix84/otus-css-putilin/tree/support/lighthouse/lh-mobile.html). 
