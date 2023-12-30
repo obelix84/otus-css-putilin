@@ -1,5 +1,6 @@
 # 🚀 Проектная работа по курсу Otus HTML/CSS
 
+Готовый проект можно посмотреть по ссылке на [GitHub Pages](https://obelix84.github.io/otus-css-putilin/).  
 Основной проект находится в ветке [main](https://github.com/obelix84/otus-css-putilin/tree/main).  
 В ветке [tailwind-atomic-css](https://github.com/obelix84/otus-css-putilin/tree/tailwind-atomic-css) находится версия проекта с использованием **Tailwind CSS**. 
 
